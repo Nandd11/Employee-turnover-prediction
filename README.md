@@ -85,8 +85,6 @@ Logistic Regression provides model transparency.
 - Positive coefficient ⇒ increases probability of turnover
 - Negative coefficient ⇒ decreases probability of turnover
 
-Top influencing features are printed at the end of the notebook.
-
 ---
 
 ## Author
