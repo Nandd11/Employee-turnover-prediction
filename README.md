@@ -172,6 +172,3 @@ git push -u origin main
 ## Author
 **Nand**
 
-If you want, I can also create:
-- ✅ a clean **Project Report PDF**
-- ✅ a **presentation PPT** for submission
