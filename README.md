@@ -17,14 +17,19 @@ Predict whether an employee is likely to leave the organization using supervised
 ```
 employee-turnover-prediction/
 │── notebooks/
-│   └── employee_turnover_project_FINAL.ipynb
+│ └── employee_turnover_project_FINAL.ipynb
+│── data/
+│ └── employee_turnover.csv
 │── assets/
-│   ├── confusion_matrix_l2.png
-│   ├── roc_curve_l2.png
-│   └── results_table.png
+│ ├── confusion_matrix_baseline.png
+│ ├── confusion_matrix_l1.png
+│ ├── confusion_matrix_l2.png
+│ ├── roc_curve_baseline.png
+│ ├── roc_curve_l1.png
+│ └── roc_curve_l2.png
 │── requirements.txt
 │── .gitignore
-│── README.md
+└── README.md
 ```
 
 ---
@@ -36,8 +41,12 @@ The dataset contains employee-related features such as:
 - salary/income and benefits
 - training, overtime, and work-life balance indicators  
 - target label: `Employee_Turnover` (**0 = stayed, 1 = left**)
-
+- Dataset: employee_turnover.csv  (Kaggle)
 ---
+
+## How to run Path
+
+git clone https://github.com/Nandd11/Employee-turnover-prediction.git
 
 ## Methodology
 
@@ -62,8 +71,20 @@ Used `GridSearchCV` for:
 
 ## Results
 
+Result Comparision Table
+
+| Model                              | Accuracy | ROC-AUC |
+| ---------------------------------- | -------- | ------- |
+| Baseline Logistic Regression       | xx.xx    | 0.96    |
+| L1 Regularized Logistic Regression | xx.xx    | 0.96    |
+| L2 Regularized Logistic Regression | xx.xx    | 0.96    |
+
+
 ### Best model (Final Recommendation)
 > ✅ **L2 Regularization Logistic Regression** performed best overall (based on ROC-AUC + balanced precision/recall).
+> L2 is best because it generalizes well and avoids overfitting.
+  L1 gives feature selection but performance similar.
+  Baseline is good but regularization improves stability
 
 ### Metrics used
 - Accuracy
