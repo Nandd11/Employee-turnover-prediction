@@ -71,15 +71,6 @@ Used `GridSearchCV` for:
 - Confusion Matrix
 - ROC Curve + ROC-AUC
 
-#### Confusion Matrix (example)
-![Confusion Matrix - L2](assets/confusion_matrix_l2.png)
-
-#### ROC Curve (example)
-![ROC Curve - L2](assets/roc_curve_l2.png)
-
-#### Comparison Table (optional)
-![Results Table](assets/results_table.png)
-
 ---
 
 ## Key Insights (Interpretation)
